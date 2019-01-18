@@ -20,15 +20,6 @@ with open('credentials.json') as f:
     dbconfig = json.load(f)
 
 
-async def connect_db():
-    """Connects to the database"""
-    conn = await aiomysql.connect(host='127.0.0.1', port=3306,
-                                  user=dbconfig['user'],
-                                  password=dbconfig['password'],
-                                  db=dbconfig['database'])
-    app['db'] = conn
-
-
 @web.middleware
 async def validate_token(request, handler):
     """Validates token and handles JSON responses"""
