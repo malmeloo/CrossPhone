@@ -7,14 +7,13 @@ import util
 from aiohttp import web
 
 PORT = 55555
-
-logging.basicConfig(level=logging.WARNING)
-
 EXTENSIONS = [
     'extensions.numbers',
     'extensions.bots',
     'extensions.websocket'
 ]
+
+logging.basicConfig(level=logging.WARNING)
 
 with open('credentials.json') as f:
     dbconfig = json.load(f)
