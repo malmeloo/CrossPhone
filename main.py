@@ -2,9 +2,9 @@ import importlib
 import json
 import logging
 
-import aiomysql
-import util
 from aiohttp import web
+
+import util
 
 PORT = 55555
 EXTENSIONS = [

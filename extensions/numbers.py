@@ -1,7 +1,8 @@
 import random
 
-import util
 from aiohttp import web
+
+import util
 
 
 class NumbersExt:
