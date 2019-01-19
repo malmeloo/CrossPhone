@@ -127,3 +127,6 @@ dmypy.json
 # Credential files
 registered_bots.json
 credentials.json
+
+# PyCharm
+.idea/
