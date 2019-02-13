@@ -1,9 +1,13 @@
-from .registrars import get_bots, get_bots_cleaned
-from .database import DatabaseConnection
-
+from .calling import *
+from .database import *
+from .registrars import *
 
 __all__ = (
+    'ClientObject',
     'get_bots',
     'get_bots_cleaned',
-    'DatabaseConnection'
+    'DatabaseConnection',
+    'WebSocketClient',
+    'NumberObject',
+    'CallObject'
 )

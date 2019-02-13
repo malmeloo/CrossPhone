@@ -31,7 +31,7 @@ class BotsExt:
             bots = util.get_bots_cleaned()
             bot_info = bots.get(token)
         else:
-            bots = self.app['bots']
+            bots = util.get_bots()
             bot_info = bots.get(bot_id)
 
             del bot_info['token']

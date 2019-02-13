@@ -8,8 +8,9 @@ import util
 
 PORT = 55555
 EXTENSIONS = [
-    'extensions.numbers',
     'extensions.bots',
+    'extensions.call',
+    'extensions.numbers',
     'extensions.websocket'
 ]
 
